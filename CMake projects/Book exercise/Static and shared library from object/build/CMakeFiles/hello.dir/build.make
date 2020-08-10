@@ -99,7 +99,7 @@ hello_EXTERNAL_OBJECTS =
 
 hello: CMakeFiles/hello.dir/hello_world.cpp.o
 hello: CMakeFiles/hello.dir/build.make
-hello: libmessage-static.a
+hello: libmessage-shared.so
 hello: CMakeFiles/hello.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Static and shared library from object/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)

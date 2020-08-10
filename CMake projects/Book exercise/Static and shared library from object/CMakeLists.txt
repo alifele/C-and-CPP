@@ -31,4 +31,4 @@ add_library(message-shared
 
 add_executable(hello hello_world.cpp)
 
-target_link_libraries(hello message-static)
+target_link_libraries(hello message-shared)

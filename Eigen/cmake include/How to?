@@ -1,0 +1,25 @@
+to make this possible I downloaded the latest release of eigen. then I extracted the file and after that I went inside of that directory.
+
+
+Then I made a folder called build
+
+>>eigen/build $ cmake ..
+>>eigen/build $ sudo make install
+
+
+doing this will add the eigen3 library it /usr/local/include.
+The now you can use 'find_package (Eigen3 3.3 REQUIRED NO_MODULE)' in your cmake file to import the file. also of you have these files in an other location you can pass the directory when you are calling cmake:
+
+'cmake path-to-example-directory -DEigen3_DIR=$HOME/mypackages/share/eigen3/cmake/'
+
+
+You can find more at:https://eigen.tuxfamily.org/dox/TopicCMakeGuide.html
+
+
+
+
+
+#THINGS THAT I NEED TO FIGURE OUT:
+
+1. how to install the library locally (it is possible but you need to pass the new location of the installed library (containing the .cmake files) as an argument to the cmake. And since it is a long argument, so you may porbably write a bash script to the job properly)
+2. how to turn the library to a shared to static library (it seems that it is not possibel: https://stackoverflow.com/questions/28267104/using-eigen-lib-in-my-cmake-project)

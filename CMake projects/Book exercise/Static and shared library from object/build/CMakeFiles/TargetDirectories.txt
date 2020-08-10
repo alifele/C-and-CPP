@@ -1,0 +1,6 @@
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Static and shared library from object/build/CMakeFiles/rebuild_cache.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Static and shared library from object/build/CMakeFiles/edit_cache.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Static and shared library from object/build/CMakeFiles/hello.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Static and shared library from object/build/CMakeFiles/message-shared.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Static and shared library from object/build/CMakeFiles/message-static.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Static and shared library from object/build/CMakeFiles/message-obj.dir

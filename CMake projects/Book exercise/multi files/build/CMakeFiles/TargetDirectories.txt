@@ -1,0 +1,5 @@
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/multi files/build/CMakeFiles/rebuild_cache.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/multi files/build/CMakeFiles/edit_cache.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/multi files/build/CMakeFiles/messageshare.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/multi files/build/CMakeFiles/hello.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/multi files/build/CMakeFiles/message.dir

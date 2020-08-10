@@ -1,0 +1,3 @@
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Single Code/build/CMakeFiles/rebuild_cache.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Single Code/build/CMakeFiles/edit_cache.dir
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/Single Code/build/CMakeFiles/hello.dir

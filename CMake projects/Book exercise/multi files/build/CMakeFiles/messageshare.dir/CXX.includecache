@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/multi files/Message.cpp
+Message.hpp
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/multi files/Message.hpp
+iostream
+-
+string
+-
+
+/home/ali/Projects/C-and-CPP/CMake projects/Book exercise/multi files/Message.hpp
+iosfwd
+-
+string
+-
+

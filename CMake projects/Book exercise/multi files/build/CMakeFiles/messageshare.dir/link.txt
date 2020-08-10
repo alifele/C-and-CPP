@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libmessageshare.so -o libmessageshare.so CMakeFiles/messageshare.dir/Message.cpp.o 

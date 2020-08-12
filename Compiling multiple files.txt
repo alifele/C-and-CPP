@@ -1,0 +1,24 @@
+What happens when you include a header file in a c++ file.
+
+
+
+suppose that you are using the "add" and "sub" functions inside of your code that is defined in the adder.cpp and sub.cpp files respectivly.
+Actually when you are compiling multiple files you have something like this: (this is a project containing adder.cpp, main.cpp and sub.cpp)
+
+
+g++.exe -Wall -fexceptions -O2 -std=c++17 -IB:\trash\Project\Multi_classes\eigen-3.3.7 -IB:\trash\Project\Multi_classes -c B:\trash\Project\Multi_classes\adder.cpp -o obj\Release\adder.o
+g++.exe -Wall -fexceptions -O2 -std=c++17 -IB:\trash\Project\Multi_classes\eigen-3.3.7 -IB:\trash\Project\Multi_classes -c B:\trash\Project\Multi_classes\main.cpp -o obj\Release\main.o
+g++.exe -Wall -fexceptions -O2 -std=c++17 -IB:\trash\Project\Multi_classes\eigen-3.3.7 -IB:\trash\Project\Multi_classes -c B:\trash\Project\Multi_classes\sub.cpp -o obj\Release\sub.o
+g++.exe  -o bin\Release\Multi_classes.exe obj\Release\adder.o obj\Release\main.o obj\Release\sub.o  -s 
+
+
+The thing that happens here is that we first compile the individual files (adder.cpp, main.cpp and sub.cpp) into object files. then we link all of object files into 
+a single executable file in the last line (alternativly you can create a cmake file and build your project)
+
+
+the thing that happens is that in the preprocessing step, when you include the *.hpp header files, you declare the functions in the main file. so the compiler 
+knows that I will see some source code including the definition of the related functions.
+
+
+
+

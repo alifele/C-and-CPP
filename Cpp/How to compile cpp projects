@@ -1,0 +1,8 @@
+I mostly complie the projects like following:
+
+scr/*.cpp  -> this folder contains the sources files (including the main.cpp file)
+inc/*.h    -> this folder contains the header files
+
+
+The bash command to compile the project:
+g++ -o bin -I inc src/*.cpp

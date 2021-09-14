@@ -15,3 +15,4 @@ typedef struct NodesClass{
 void Nodes_setHeader(NodesClass *addr ,Node *header);
 void Nodes_setTail(NodesClass *addr ,Node *tail);
 void Nodes_List(NodesClass *addr);
+void Nodes_addNode(NodesClass *addr, int value);

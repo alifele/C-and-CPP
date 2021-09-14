@@ -22,3 +22,12 @@ void Nodes_List(NodesClass *addr){
     currentnode = currentnode->next;
   }
 }
+
+void Nodes_addNode(NodesClass *addr, int value){
+  Node *newnode = NULL;
+  newnode = (Node *)malloc(sizeof(Node));
+
+  newnode->data = value;
+  newnode->next = NULL;
+  addr->lastNode->next = newnode;
+}

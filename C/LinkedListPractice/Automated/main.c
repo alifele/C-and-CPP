@@ -28,6 +28,8 @@ int main(){
   Nodes_setHeader(&myLinkedList, node1);
   Nodes_setTail(&myLinkedList, node3);
 
+  Nodes_addNode(&myLinkedList, 123);
+
 
 
   Nodes_List(&myLinkedList);

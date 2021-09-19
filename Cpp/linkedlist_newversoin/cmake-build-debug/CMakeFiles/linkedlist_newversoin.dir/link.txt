@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/linkedlist_newversoin.dir/main.cpp.o CMakeFiles/linkedlist_newversoin.dir/LinkedList/LinkedList.cpp.o -o linkedlist_newversoin 

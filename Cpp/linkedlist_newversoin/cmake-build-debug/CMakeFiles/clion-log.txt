@@ -1,0 +1,4 @@
+/snap/clion/164/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/alifele/Projects/C-and-CPP/Cpp/linkedlist_newversoin
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/alifele/Projects/C-and-CPP/Cpp/linkedlist_newversoin/cmake-build-debug

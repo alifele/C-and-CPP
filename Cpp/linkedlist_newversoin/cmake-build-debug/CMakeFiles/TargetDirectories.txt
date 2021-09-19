@@ -1,0 +1,3 @@
+/home/alifele/Projects/C-and-CPP/Cpp/linkedlist_newversoin/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alifele/Projects/C-and-CPP/Cpp/linkedlist_newversoin/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alifele/Projects/C-and-CPP/Cpp/linkedlist_newversoin/cmake-build-debug/CMakeFiles/linkedlist_newversoin.dir

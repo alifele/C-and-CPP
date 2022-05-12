@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/include/LinkedList.h
+Nodes.h
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/include/Nodes.h
+
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/include/Nodes.h
+
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/libs/LinkedList.cpp
+../include/LinkedList.h
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/include/LinkedList.h
+iostream
+-
+
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/libs/Nodes.cpp
+../include/Nodes.h
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/include/Nodes.h
+

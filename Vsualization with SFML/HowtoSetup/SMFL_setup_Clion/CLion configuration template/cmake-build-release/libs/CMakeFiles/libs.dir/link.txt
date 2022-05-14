@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibs.a CMakeFiles/libs.dir/LinkedList.cpp.o CMakeFiles/libs.dir/Nodes.cpp.o
+/usr/bin/ranlib liblibs.a

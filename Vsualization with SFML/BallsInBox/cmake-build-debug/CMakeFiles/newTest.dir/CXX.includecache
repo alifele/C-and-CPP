@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/libs/Ball.cpp
+Ball.h
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/libs/Ball.h
+iostream
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/libs/iostream
+
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/libs/Ball.h
+SFML/Window.hpp
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/libs/SFML/Window.hpp
+SFML/Graphics.hpp
+/home/BCCRC.CA/aparanj/Projects/ClionTests/newTest/libs/SFML/Graphics.hpp
+

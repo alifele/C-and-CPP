@@ -8,7 +8,7 @@ Then I made a folder called build
 
 
 doing this will add the eigen3 library it /usr/local/include.
-The now you can use 'find_package (Eigen3 3.3 REQUIRED NO_MODULE)' in your cmake file to import the file. also of you have these files in an other location you can pass the directory when you are calling cmake:
+The now you can use 'find_package (Eigen3 3.3 REQUIRED NO_MODULE)' in your cmake file to import the file. also if you have these files in an other location you can pass the directory when you are calling cmake:
 
 'cmake path-to-example-directory -DEigen3_DIR=$HOME/mypackages/share/eigen3/cmake/'
 

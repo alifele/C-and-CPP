@@ -11,10 +11,20 @@ public:
 
     UnionFind(int size): _size(size) {
         _data.resize(_size);
+        _rank.resize(_size);
+        _sizeList.resize(_size);
         
         int i=0;
         for (int& value: _data) {
             value = i++;
+        }
+        
+        for (int& value: _rank) {
+            value = 0;
+        }
+        
+        for (int& value: _sizeList) {
+            value = 1;
         }
     }
     
@@ -44,17 +54,13 @@ public:
         
     }
     
+    
     void Union(int v1, int v2) {
-        int root1 = find(v1);
-        int root2 = find(v2);
-        
-        
-        if (root1 == root2) {
-            return;
-        } else {
-            _data[root2] = _data[root1];
-        }
+        // Union_rank(v1, v2);
+        Union_size(v1, v2);
     }
+    
+    
 
     
 
@@ -62,6 +68,8 @@ public:
 
 private:
     vector<int> _data;
+    vector<int> _rank;
+    vector<int> _sizeList;
     int _size;
     
     
@@ -71,6 +79,44 @@ private:
         }
         st.push(value);
         return find_helper(_data[value], st);
+    }
+    
+    void Union_rank(int v1, int v2) {
+        int root1 = find(v1);
+        int root2 = find(v2);
+        
+        int biggerRankRoot;
+        int otherRoot;
+        if (_rank[root1] == _rank[root2]) {
+            biggerRankRoot = root1;
+            otherRoot = root2;
+            _rank[biggerRankRoot] += 1;
+        } else {
+            biggerRankRoot = root1;
+            otherRoot = root2;
+            if (_rank[root2] >= _rank[root1]) {
+                biggerRankRoot = root2;
+                otherRoot = root1;
+            }
+        }
+        
+        _data[otherRoot] = _data[biggerRankRoot];
+    }
+    
+    
+    void Union_size(int v1, int v2) {
+        int root1 = find(v1);
+        int root2 = find(v2);
+        
+        
+        if (_sizeList[root1]<_sizeList[root2]) {
+            _data[root1] = root2;
+            _sizeList[root2] += _sizeList[root1];
+        }
+        else {
+            _data[root2] = root1;
+            _sizeList[root1] += _sizeList[root2];
+        }
     }
     
     
@@ -111,7 +157,7 @@ int main() {
 
     
     
-    // with path compression: 7 7 2 3 2 7 3 7 2 3 0 1 
+    
 
 
 

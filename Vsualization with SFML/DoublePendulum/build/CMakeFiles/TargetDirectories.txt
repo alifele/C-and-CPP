@@ -1,0 +1,3 @@
+/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build/CMakeFiles/DoublePendulum.dir
+/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build/CMakeFiles/edit_cache.dir
+/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build/CMakeFiles/rebuild_cache.dir

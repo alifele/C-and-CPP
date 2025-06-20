@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build",
+  "command": "/usr/bin/clang++  -isystem /usr/include/eigen3 -g -o CMakeFiles/DoublePendulum.dir/main.cpp.o -c \"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/main.cpp\"",
+  "file": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/main.cpp"
+},
+{
+  "directory": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build",
+  "command": "/usr/bin/clang++  -isystem /usr/include/eigen3 -g -o CMakeFiles/DoublePendulum.dir/libs/Sketch.cpp.o -c \"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Sketch.cpp\"",
+  "file": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Sketch.cpp"
+},
+{
+  "directory": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build",
+  "command": "/usr/bin/clang++  -isystem /usr/include/eigen3 -g -o CMakeFiles/DoublePendulum.dir/libs/Pivot.cpp.o -c \"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Pivot.cpp\"",
+  "file": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Pivot.cpp"
+},
+{
+  "directory": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build",
+  "command": "/usr/bin/clang++  -isystem /usr/include/eigen3 -g -o CMakeFiles/DoublePendulum.dir/libs/Line.cpp.o -c \"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Line.cpp\"",
+  "file": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Line.cpp"
+},
+{
+  "directory": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build",
+  "command": "/usr/bin/clang++  -isystem /usr/include/eigen3 -g -o CMakeFiles/DoublePendulum.dir/libs/Ball.cpp.o -c \"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Ball.cpp\"",
+  "file": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Ball.cpp"
+},
+{
+  "directory": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/build",
+  "command": "/usr/bin/clang++  -isystem /usr/include/eigen3 -g -o CMakeFiles/DoublePendulum.dir/libs/Physics.cpp.o -c \"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Physics.cpp\"",
+  "file": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/Vsualization with SFML/DoublePendulum/libs/Physics.cpp"
+}
+]

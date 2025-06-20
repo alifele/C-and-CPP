@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g CMakeFiles/graph.dir/src/graph.cpp.o CMakeFiles/graph.dir/src/main.cpp.o -o graph  -lSDL2 

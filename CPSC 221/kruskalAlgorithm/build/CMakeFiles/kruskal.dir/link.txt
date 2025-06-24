@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/kruskal.dir/src/graph.cpp.o CMakeFiles/kruskal.dir/src/main.cpp.o -o kruskal 

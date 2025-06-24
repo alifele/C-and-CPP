@@ -1,0 +1,3 @@
+/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/build/CMakeFiles/kruskal.dir
+/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/build/CMakeFiles/edit_cache.dir
+/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/build/CMakeFiles/rebuild_cache.dir

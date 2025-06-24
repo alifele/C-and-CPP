@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/build",
+  "command": "/usr/bin/c++  -I\"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/inc\" -g -o CMakeFiles/kruskal.dir/src/graph.cpp.o -c \"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/src/graph.cpp\"",
+  "file": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/src/graph.cpp"
+},
+{
+  "directory": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/build",
+  "command": "/usr/bin/c++  -I\"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/inc\" -g -o CMakeFiles/kruskal.dir/src/main.cpp.o -c \"/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/src/main.cpp\"",
+  "file": "/home/alifeleparanj/Projects/GitHubClones/C-and-CPP/CPSC 221/kruskalAlgorithm/src/main.cpp"
+}
+]

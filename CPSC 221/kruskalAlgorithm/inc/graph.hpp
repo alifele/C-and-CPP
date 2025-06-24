@@ -86,5 +86,22 @@ private:
 
 
 
+class UnionFind {
+public:
+
+
+    void addElem(Node* node);
+
+    void unite(Node* node1, Node* node2);
+    Node* find(Node* node);
+    Node* operator()(Node* node);
+
+
+
+
+private:
+    std::unordered_map<Node*, Node*> parentMap;
+};
+
 
 #endif

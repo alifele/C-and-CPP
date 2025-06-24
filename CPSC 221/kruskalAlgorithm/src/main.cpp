@@ -28,26 +28,50 @@ void makeGrid(Graph& g) {
 }
 
 
+void makeSquareWithDiag(Graph& g) {
+    g.addNode(0);
+    g.addNode(1);
+    g.addNode(2);
+    g.addNode(3);
+
+    g.addEdge(0,3,0,1);
+    g.addEdge(0,1,1,1);
+    g.addEdge(3,1,4,1);
+    g.addEdge(3,2,3,1);
+    g.addEdge(2,1,2,1);
+}
+
+
 
 int main() {
 
-    Graph g;
-    makeGrid(g);
+    // Graph g;
+    // makeGrid(g);
+    // // makeSquareWithDiag(g);
+    // g.DFS();
+    // // g.BFS();
 
-    // g.addNode(0);
-    // g.addNode(1);
-    // g.addNode(2);
-    // g.addNode(3);
 
-    // g.addEdge(0,3,0,1);
-    // g.addEdge(0,1,1,1);
-    // g.addEdge(3,1,4,1);
-    // g.addEdge(3,2,3,1);
-    // g.addEdge(2,1,2,1);
+    //// testing UnionFind
+    Node* node0 = new Node(0);
+    Node* node1 = new Node(1);
+    Node* node2 = new Node(2);
+    Node* node3 = new Node(3);
+    Node* node4 = new Node(4);
 
-    g.DFS();
-    
-    // g.BFS();
+    UnionFind unfind;
+
+    unfind.addElem(node0);
+    unfind.addElem(node1);
+    unfind.addElem(node2);
+    unfind.addElem(node3);
+    // unfind.addElem(node4);
+
+    unfind.unite(node1,node0);
+    unfind.unite(node2,node0);
+
+
+    std::cout << unfind(node3)->getID() << endl;
 
 
 

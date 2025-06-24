@@ -154,3 +154,34 @@ void Graph::DFS() {
     }
     cout << endl;
 }
+
+
+
+// ===========================================
+// =     UnionFind class
+// ===========================================
+
+
+void UnionFind::addElem(Node* node) {
+    parentMap.insert({node, node});
+}
+
+
+Node* UnionFind::find(Node* node) {
+    if (parentMap[node]==node) {
+        return node;
+    }
+
+    return find(parentMap[node]);
+}
+
+
+Node* UnionFind::operator()(Node* node) {
+    return find(node);
+}
+
+
+void UnionFind::unite(Node* node1, Node* node2) {
+    parentMap[node1] = node2;
+}
+

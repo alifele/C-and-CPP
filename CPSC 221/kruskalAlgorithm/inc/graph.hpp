@@ -15,11 +15,15 @@ public:
 
     Node* start;
     Node* end;
+    bool inMinSpanTree;
+
+    struct comparator;
 
     Edge(std::pair<Node*, Node*> startEndNodes, int id, int weight);
     friend std::ostream& operator<<(std::ostream& os, Edge& edge);
     void removeEdge();
     int getId();
+    void setMinSpanTree();
 
 private:
     int id;
@@ -57,15 +61,20 @@ private:
 class Graph {
 public:
 
+    // ====== fields
+    
+
+
+    // ====== methods
     Graph();
     void addNode(int id);
     // void removeNode(int id);
     void addEdge(int node1, int node2, int id, int weight);
     // void removeEdge(int node1, int node2, int id);
-
     void BFS();
     void DFS();
     void findMinSpanTree();
+    void printMinSpanningTree();
 
 
 

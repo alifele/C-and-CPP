@@ -14,15 +14,21 @@ public:
     }
 
     void unite(T* node1, T* node2) {
-        parentMap[node1] = node2;
+    	Node* root1 = find(node1);
+    	Node* root2 = find(node2);
+    	if (root1 != root2) {
+    	    parentMap[root1] = root2;
+    	}
+    	
+
     }
     
     
     T* find(T* node) {
-        if (parentMap[node]==node) {
-            return node;
+        if (parentMap[node]!=node) {
+            parentMap[node] = find(parentMap[node]);
         }
-        return find(parentMap[node]);
+        return parentMap[node]
     }
     
     

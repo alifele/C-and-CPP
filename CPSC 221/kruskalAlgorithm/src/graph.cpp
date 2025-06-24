@@ -55,6 +55,7 @@ Edge::Edge(pair<Node*, Node*> startEndNodes, int id, int weight) {
 
     this->id = id;
     this->weight = weight;
+    this->inMinSpanTree = false;
 }
 
 
@@ -67,6 +68,16 @@ std::ostream& operator<<(std::ostream& os, Edge& edge) {
 
 int Edge::getId() {
     return id;
+}
+
+struct Edge::comparator {
+    bool operator()(Edge* edge1, Edge* edge2) const {
+        return edge1->weight >= edge2->weight;
+    }
+};
+
+void Edge::setMinSpanTree() {
+    inMinSpanTree = true;
 }
 
 
@@ -98,7 +109,6 @@ void Graph::addEdge(int n1, int n2, int id, int weight) {
 
 void Graph::BFS() {
     queue<Node*> qu;
-    // vector<bool> visited(numNodes, false);
     unordered_map<Node*, bool> visited;
     for (auto elem: nodes) {
         visited.insert({elem.second, false});
@@ -109,13 +119,15 @@ void Graph::BFS() {
     qu.push(it->second);
     visited[it->second]= true;
 
+
+    cout << "A BFS is:\n";
     while (! qu.empty()) {
         Node* thisNode = qu.front();
         qu.pop();
         cout << thisNode->getID() << " ";
 
         for (Edge* edge: thisNode->getEdges()) {
-            Node* endNode = (thisNode==edge->start) ? endNode=edge->end : endNode=edge->start;
+            Node* endNode = (thisNode==edge->start) ? edge->end : edge->start;
             if (visited[endNode] == false) {
                 qu.push(endNode);
                 visited[endNode] = true;
@@ -129,15 +141,16 @@ void Graph::BFS() {
 void Graph::DFS() {
     stack<Node*> st;
     unordered_map<Node*, bool> visited;
-
     for (auto elem: nodes) {
-        visited[elem.second] = false;
+        visited.insert({elem.second, false});
     }
 
     auto it = nodes.begin();
     st.push(it->second);
     visited[it->second] = true;
 
+
+    cout << "A DFS is:\n"; 
 
     while(! st.empty()) {
         Node* thisNode = st.top();
@@ -156,6 +169,42 @@ void Graph::DFS() {
 }
 
 
+void Graph::findMinSpanTree() {
+    priority_queue<Edge*, vector<Edge*>, Edge::comparator> edgeMinHeap;
+    UnionFind clusters;
+
+    for (auto elem: edges) {
+        edgeMinHeap.push(elem.second);
+    }
+
+    for (auto elem: nodes) {
+        clusters.addElem(elem.second);
+    }
+
+
+    while(!edgeMinHeap.empty()) {
+        Edge* thisEdge = edgeMinHeap.top();
+        edgeMinHeap.pop();
+        if (clusters.find(thisEdge->start) != clusters.find(thisEdge->end)) {
+            thisEdge->setMinSpanTree();
+            clusters.unite(thisEdge->start, thisEdge->end);
+        }
+    }
+
+}
+
+
+void Graph::printMinSpanningTree() {
+    cout << "a minimum spanning tree is:" << endl;
+    for (auto elem: edges) {
+        if (elem.second->inMinSpanTree==true) {
+            cout << elem.second->getId() << " ";
+        }
+    }
+    cout << endl;
+}
+
+
 
 // ===========================================
 // =     UnionFind class
@@ -168,11 +217,10 @@ void UnionFind::addElem(Node* node) {
 
 
 Node* UnionFind::find(Node* node) {
-    if (parentMap[node]==node) {
-        return node;
+    if (parentMap[node] != node) {
+        parentMap[node] = find(parentMap[node]);  // path compression
     }
-
-    return find(parentMap[node]);
+    return parentMap[node];
 }
 
 
@@ -182,6 +230,10 @@ Node* UnionFind::operator()(Node* node) {
 
 
 void UnionFind::unite(Node* node1, Node* node2) {
-    parentMap[node1] = node2;
+    Node* root1 = find(node1);
+    Node* root2 = find(node2);
+    if (root1 != root2) {
+        parentMap[root1] = root2;
+    }
 }
 
